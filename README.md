@@ -13,6 +13,8 @@ This project revolves around the enhancement of audio quality through noise redu
 <h2>Achievements</h2> 
 <p>The ultimate achievements includes: 
     ⮚ The use of low pass filtering mechanisms to avoid the high frequency note. ⮚ Creation of echo from a sharp audio. 
+
     ⮚ The reduction of modulated sound using flange effect. 
+    
     ⮚ The tuning of audio frequency using graphic equalizer.
 </p>
