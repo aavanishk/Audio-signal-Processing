@@ -1,0 +1,19 @@
+[filename,pathname] = uigetfile('*.*','Select the input audio');
+[x,Fs] = audioread(num2str(filename));
+
+n = length(x);
+a = 0.8;
+d = 2000;
+y = zeros(n+d,1);
+xn = padarray(x,[d,0],0,'pre');
+for i = d+1:1:n
+    y(i-d,1) = x(i) + a*xn(i-d);
+end     
+sound(y,Fs);
+subplot(3,1,1)
+plot(x);
+title 'Normal Sound';
+
+subplot(3,1,2)
+plot(y);
+title 'Echoed Sound'
